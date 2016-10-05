@@ -11,6 +11,7 @@
 	<meta name="description" content="">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
    	<link rel="stylesheet" href="css/owl.theme.css">
@@ -33,9 +34,9 @@
 
 			<div class="col-md-12 col-sm-12">
 				<h3 class="wow fadeInDown" data-wow-delay="0.2s">DISCOVER</h3>
-				<h1 class="wow fadeInDown">KLAR WEB DESIGN</h1>
-				<a data-toggle="modal" href="#loginForm" class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s"> CLIENT LOGIN</a>
-				<a data-toggle="modal" href="about.html" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s"> SITE PREVIEWS</a>
+				<h1 class="wow fadeInDown">Luna Site Design</h1>
+				<a data-toggle="modal" href="#loginForm" class="btn btn-danger wow fadeInUp login" data-wow-delay="0.4s"> CLIENT LOGIN</a>
+				<a href="siteprev.html" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s"> SITE PREVIEWS</a>
 			</div>
 
 		</div>
@@ -353,19 +354,35 @@
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="patient-login">
+        <form class="form-inline" action="index.html" method="post" id="client-login">
             <input type="text" class="input-small" placeholder="Email">
             <input type="password" class="input-small" placeholder="Password"> 
             <label class="checkbox">
-                <input type="checkbox"> Remember me
-            </label>
+                <input type="checkbox"> Remember me</label>
             <button type="submit" class="btn btn-primary">Sign in</button>
            
         </form>
         Looking for pricing? <a href="contact.html">Contact Us</a><br>
-        <a href="#">Forgot your password?</a>
+        <a href="#pass">Forgot your password?</a>
     </div>
     <!--/Modal Body-->
+</div>
+<!-- password forgot form -->
+<div class="modal hide fade in" id="pass" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Forgot Password</h4>
+    </div>
+    <!--Modal2 Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="pass-forgot">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       <a data-toggle="modal" data-dismiss="modal" href="#loginForm">Login</a>
+    </div>
+    <!--/Modal2 Body-->
 </div>
 <!--  /Login form -->
 
